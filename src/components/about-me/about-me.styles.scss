@@ -1,0 +1,107 @@
+$main: rgb(21, 27, 71);
+$teal: rgb(100, 255, 218);
+$lightBlue: rgb(230, 241, 255);
+$gray: rgb(136, 146, 176);
+$fifth: rgb(23, 42, 69);
+$navy: rgb(10, 25, 47);
+$bg: #d1e8e2;
+$darkBg: #bed1cc;
+$nav: #14a76c;
+$accent: #e43d40;
+
+$rale: 'Raleway', sans-serif;
+$mons: 'Montserrat', sans-serif;
+
+.about-container {
+  margin-left: 22rem;
+  margin-top: 20rem;
+  position: relative;
+  background-color: $bg;
+  @media screen and (max-width: 375px) {
+    margin-left: 0;
+    padding: 5rem;
+    font-size: 2rem;
+    // width: 300px;
+    //margin-bottom: -10rem;
+  }
+
+  h3 {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: -100px 3px 48px;
+    width: 100%;
+    white-space: nowrap;
+    font-size: 3rem;
+    font-family: $rale;
+    color: $navy;
+    @media screen and (max-width: 375px) {
+      font-size: 4rem;
+      margin-left: 5rem;
+    }
+    &:before {
+      margin-right: 10px;
+      font-weight: normal;
+      //color: $first;
+      font-size: 2rem;
+      position: relative;
+      bottom: 4px;
+    }
+    &:after {
+      content: '';
+      display: block;
+      height: 1px;
+      width: 300px;
+      background-color: $navy;
+      position: relative;
+      top: -5px;
+      margin-left: 20px;
+      @media screen and (max-width: 375px) {
+        display: none;
+      }
+    }
+  }
+
+  .flex-container {
+    display: flex;
+    align-items: flex-start;
+    width: 800px;
+    min-width: 800px;
+    position: relative;
+  }
+
+  .content-container {
+    //width: 60%;
+    //max-width: 480px;
+    color: $navy;
+    font-family: $rale;
+    padding: 1rem;
+    line-height: 27px;
+    @media screen and (max-width: 375px) {
+      font-size: 2rem;
+      width: 300px;
+    }
+    a {
+      text-decoration: underline;
+      color: $navy;
+    }
+    p {
+      width: 600px;
+      margin-bottom: 2rem;
+      font-size: 1.4rem;
+    }
+  }
+  .pic-container {
+    margin-top: 23px;
+    img {
+      width: 277px;
+      position: relative;
+
+      @media screen and (max-width: 375px) {
+        width: 250px;
+        padding: 15px;
+        margin-left: 10px;
+      }
+    }
+  }
+}

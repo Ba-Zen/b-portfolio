@@ -21,21 +21,24 @@ $mons: 'Montserrat', sans-serif;
   background-color: $bg;
   margin-top: 10rem;
   @media screen and (max-width: 375px) {
-    margin-left: 0;
-    padding: 5rem;
+    margin: 0rem 3rem 0 3rem;
+    width: 600px;
   }
 
   h4 {
     color: $navy;
     font-size: 1.8rem;
     font-family: $rale;
+    @media screen and (max-width: 375px) {
+      margin-top: 10rem;
+    }
   }
   h1 {
     color: $accent;
     font-size: 3.5rem;
     margin-top: 2rem;
     font-family: $rale;
-
+    font-weight: 400;
     @media screen and (max-width: 375px) {
       font-size: 3rem;
     }
@@ -48,7 +51,7 @@ $mons: 'Montserrat', sans-serif;
     margin-top: 2rem;
 
     @media screen and (max-width: 375px) {
-      font-size: 4rem;
+      font-size: 2.5rem;
     }
   }
   p {
@@ -60,7 +63,6 @@ $mons: 'Montserrat', sans-serif;
 
     @media screen and (max-width: 375px) {
       font-size: 2rem;
-      width: 300px;
     }
   }
 }

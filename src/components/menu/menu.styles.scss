@@ -91,12 +91,15 @@ $mons: 'Montserrat', sans-serif;
   left: initial;
   right: 36px;
   top: 20px;
-  display: none;
+  visibility: hidden;
+  @media screen and (max-width: 375px) {
+    visibility: visible;
+  }
 }
 
 /* Color/shape of burger icon bars */
 .bm-burger-bars {
-  background: #373a47;
+  background: $navy;
 }
 
 /* Color/shape of burger icon bars on hover*/
@@ -126,28 +129,33 @@ $mons: 'Montserrat', sans-serif;
 
 /* General sidebar styles */
 .bm-menu {
-  background: #373a47;
+  background: $navy;
   padding: 2.5em 1.5em 0;
   font-size: 1.15em;
 }
 
 /* Morph shape necessary with bubble or elastic */
 .bm-morph-shape {
-  fill: #373a47;
+  fill: $navy;
 }
 
 /* Wrapper for item list */
 .bm-item-list {
-  color: #b8b7ad;
   padding: 0.8em;
 }
 
 /* Individual item */
 .bm-item {
+  color: $bg;
   display: inline-block;
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+  margin-bottom: 20px;
 }
 
 /* Styling of overlay */
 .bm-overlay {
-  background: rgba(0, 0, 0, 0.3);
+  background: $navy;
 }
