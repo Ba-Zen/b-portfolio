@@ -1,0 +1,149 @@
+$main: rgb(21, 27, 71);
+$teal: rgb(100, 255, 218);
+$lightBlue: rgb(230, 241, 255);
+$gray: rgb(136, 146, 176);
+$fifth: rgb(23, 42, 69);
+$navy: rgb(10, 25, 47);
+$bg: #d1e8e2;
+$darkBg: #bed1cc;
+$nav: #14a76c;
+$accent: #e43d40;
+
+$rale: 'Raleway', sans-serif;
+$mons: 'Montserrat', sans-serif;
+
+.nav-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  font-family: $rale;
+  height: 100%;
+  width: 275px;
+  background: $navy;
+  color: white;
+  position: fixed;
+  @media screen and (max-width: 375px) {
+    display: none;
+  }
+  .logo {
+    width: 100px;
+  }
+  .social-icons {
+    margin-top: 3rem;
+    a {
+      display: inline-block;
+      height: 4.5rem;
+      width: 4.5rem;
+      background-color: $main;
+      color: #fff !important;
+      border-radius: 100%;
+      text-align: center;
+      font-size: 2.3rem;
+      line-height: 4.7rem;
+      margin: 1rem 2rem;
+
+      :hover {
+        background: $accent;
+      }
+    }
+    @media screen and (max-width: 375px) {
+      display: none;
+    }
+  }
+  .menu-item {
+    text-decoration: none;
+    color: $bg;
+    margin: 1rem 2.5rem;
+    font-size: 1.6rem;
+    :hover {
+      color: $accent;
+    }
+    @media screen and (max-width: 375px) {
+      display: none;
+    }
+  }
+  .resume-link {
+    background-color: transparent;
+    color: $bg;
+    border: 1px solid $fifth;
+    border-radius: 0.5rem;
+    padding: 0.75rem 1rem;
+    font-size: 2.4rem;
+    line-height: 1;
+    text-decoration: none;
+    cursor: pointer;
+    :hover {
+      color: $accent;
+    }
+  }
+}
+
+/* Position and sizing of burger button */
+.bm-burger-button {
+  position: fixed;
+  width: 36px;
+  height: 30px;
+  left: initial;
+  right: 36px;
+  top: 20px;
+  display: none;
+}
+
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+  background: #373a47;
+}
+
+/* Color/shape of burger icon bars on hover*/
+.bm-burger-bars-hover {
+  background: #a90000;
+}
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+  height: 24px;
+  width: 24px;
+}
+
+/* Color/shape of close button cross */
+.bm-cross {
+  background: #bdc3c7;
+}
+
+/*
+  Sidebar wrapper styles
+  Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
+  */
+.bm-menu-wrap {
+  position: fixed;
+  height: 100%;
+}
+
+/* General sidebar styles */
+.bm-menu {
+  background: #373a47;
+  padding: 2.5em 1.5em 0;
+  font-size: 1.15em;
+}
+
+/* Morph shape necessary with bubble or elastic */
+.bm-morph-shape {
+  fill: #373a47;
+}
+
+/* Wrapper for item list */
+.bm-item-list {
+  color: #b8b7ad;
+  padding: 0.8em;
+}
+
+/* Individual item */
+.bm-item {
+  display: inline-block;
+}
+
+/* Styling of overlay */
+.bm-overlay {
+  background: rgba(0, 0, 0, 0.3);
+}
