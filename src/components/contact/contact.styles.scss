@@ -12,29 +12,28 @@ $accent: #e43d40;
 $rale: 'Raleway', sans-serif;
 $mons: 'Montserrat', sans-serif;
 
-.about-container {
-  margin-top: 40rem;
-  position: relative;
-  background-color: $bg;
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
   @media screen and (max-width: 375px) {
-    margin-left: 0;
-    padding: 5rem;
-    font-size: 2rem;
+    margin: 10rem 0 0 0;
+    padding: 1rem;
   }
-
   h3 {
     position: relative;
     display: flex;
     align-items: center;
-    margin: -100px 3px 48px;
+    margin-top: 13rem;
     width: 100%;
     white-space: nowrap;
     font-size: 5rem;
     font-family: $rale;
     color: $navy;
     @media screen and (max-width: 375px) {
-      font-size: 4rem;
-      margin-left: 10rem;
+      font-size: 3.5rem;
+      margin-left: 7rem;
     }
     &:before {
       margin-right: 10px;
@@ -58,49 +57,40 @@ $mons: 'Montserrat', sans-serif;
       }
     }
   }
+}
 
-  .flex-container {
-    display: flex;
-    align-items: flex-start;
-    width: 800px;
-    min-width: 800px;
-    position: relative;
-    @media screen and (max-width: 375px) {
-      display: flex;
-      flex-direction: column;
-    }
+.contact-content {
+  @media screen and (max-width: 375px) {
+    padding: 2.5rem;
   }
-
-  .about-content-container {
+  p {
     color: $navy;
     font-family: $rale;
-    padding: 1rem;
-    line-height: 27px;
-    @media screen and (max-width: 375px) {
-      font-size: 2rem;
-      width: 300px;
-    }
-    a {
-      text-decoration: underline;
-      color: $navy;
-      font-size: 2rem;
-    }
-    p {
-      width: 600px;
-      margin-bottom: 2rem;
-      font-size: 2rem;
-    }
+    font-size: 3rem;
+    width: 500px;
+    padding: 10px;
+    text-align: center;
+    margin: 15rem 0 0 25rem;
   }
-  .pic-container {
-    margin-top: 19px;
-    img {
-      width: 277px;
-      position: relative;
-      @media screen and (max-width: 375px) {
-        width: 350px;
-        padding: 15px;
-        margin-left: 8rem;
-      }
+  button {
+    font-size: 24px;
+    text-align: center;
+
+    margin: 5rem 0 10rem -14rem;
+    border: 2px solid $accent;
+    width: 130px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: $accent;
+    color: $navy;
+    &:hover {
+      background-color: $navy;
+      color: $accent;
+      cursor: pointer;
+    }
+    @media screen and (max-width: 375px) {
+      margin: 0;
+      margin-left: 8rem;
     }
   }
 }

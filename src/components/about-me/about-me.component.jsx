@@ -11,7 +11,7 @@ const AboutMe = () => {
       </a>
       <h3>About Me</h3>
       <div className='flex-container'>
-        <div className='content-container'>
+        <div className='about-content-container'>
           <p>
             {' '}
             Before I became a software engineer, I was an entrepreneur that

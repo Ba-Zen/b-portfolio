@@ -1,0 +1,82 @@
+$main: rgb(21, 27, 71);
+$teal: rgb(100, 255, 218);
+$lightBlue: rgb(230, 241, 255);
+$gray: rgb(136, 146, 176);
+$fifth: rgb(23, 42, 69);
+$navy: rgb(10, 25, 47);
+$bg: #d1e8e2;
+$darkBg: #bed1cc;
+$nav: #14a76c;
+$accent: #e43d40;
+
+$rale: 'Raleway', sans-serif;
+$mons: 'Montserrat', sans-serif;
+
+.skills-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 15rem 0 25rem 0;
+  @media screen and (max-width: 375px) {
+    margin-left: 3rem;
+    margin-bottom: 10rem;
+  }
+  h3 {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    white-space: nowrap;
+    font-size: 5rem;
+    font-family: $rale;
+    color: $navy;
+    @media screen and (max-width: 375px) {
+      font-size: 4rem;
+      margin-left: 17rem;
+    }
+    &:before {
+      margin-right: 10px;
+      font-weight: normal;
+      font-size: 2rem;
+      position: relative;
+      bottom: 4px;
+    }
+    &:after {
+      content: '';
+      display: block;
+      height: 1px;
+      width: 300px;
+      background-color: $navy;
+      position: relative;
+      top: -5px;
+      margin-left: 20px;
+      @media screen and (max-width: 375px) {
+        display: none;
+      }
+    }
+  }
+}
+
+.skills {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 656px;
+  align-items: center;
+  margin: 0 auto;
+  margin: 5rem 0 5rem 15rem;
+  font-family: $rale;
+  i {
+    font-size: 10rem;
+    color: $navy;
+    margin-bottom: 1rem;
+  }
+  p {
+    margin-right: 5rem;
+    color: $navy;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    font-weight: bold;
+  }
+}
