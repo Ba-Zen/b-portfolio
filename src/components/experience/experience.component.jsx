@@ -45,7 +45,7 @@ class Experience extends React.Component {
                 </div>
               </div>
               <div className='image-container'>
-                <img src={project.img} />
+                <img src={project.img} alt='project' />
               </div>
             </div>
           ))}

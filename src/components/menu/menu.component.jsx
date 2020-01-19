@@ -1,6 +1,6 @@
 import React from 'react';
 import { bubble as HamburgerMenu } from 'react-burger-menu';
-
+import Social from '../social/social';
 import './menu.styles.scss';
 import logo from '../images/B-alt.png';
 //import Social from '../social/social';
@@ -109,7 +109,7 @@ class Menu extends React.Component {
             Resume
           </a>
 
-          {/* <Social /> */}
+          <Social />
         </div>
       </>
     );

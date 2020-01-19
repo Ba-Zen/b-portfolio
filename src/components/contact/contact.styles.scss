@@ -18,8 +18,8 @@ $mons: 'Montserrat', sans-serif;
   justify-content: center;
   text-align: center;
   @media screen and (max-width: 375px) {
-    margin: 10rem 0 0 0;
     padding: 1rem;
+    margin-left: 14rem;
   }
   h3 {
     position: relative;
@@ -70,27 +70,34 @@ $mons: 'Montserrat', sans-serif;
     width: 500px;
     padding: 10px;
     text-align: center;
-    margin: 15rem 0 0 25rem;
-  }
-  button {
-    font-size: 24px;
-    text-align: center;
-
-    margin: 5rem 0 10rem -14rem;
-    border: 2px solid $accent;
-    width: 130px;
-    padding: 10px;
-    border-radius: 10px;
-    background-color: $accent;
-    color: $navy;
-    &:hover {
-      background-color: $navy;
-      color: $accent;
-      cursor: pointer;
-    }
+    margin: 15rem 0 0 17rem;
     @media screen and (max-width: 375px) {
+      font-size: 1.4rem;
       margin: 0;
-      margin-left: 8rem;
+      margin-bottom: 5rem;
+      width: 300px;
     }
+  }
+}
+button {
+  font-size: 24px;
+  text-align: center;
+  margin: 5rem 0 10rem -26rem;
+  border: 2px solid $navy;
+  width: 130px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: $bg;
+  color: $navy;
+  &:hover {
+    background-color: $accent;
+    color: $bg;
+    cursor: pointer;
+  }
+  @media screen and (max-width: 1024px) {
+    margin: 5rem 0 10rem 14rem;
+  }
+  @media screen and (max-width: 375px) {
+    margin: 0 0 8rem 8rem;
   }
 }

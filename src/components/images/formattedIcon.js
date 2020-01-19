@@ -1,50 +1,48 @@
 import React from 'react';
-import { colors } from '../../style/utils';
-import styled from 'styled-components';
 import { ReactComponent as GitHub } from '../images/icons/github.svg';
 import { ReactComponent as LinkedIn } from '../images/icons/linkedin.svg';
 import { ReactComponent as Twitter } from '../images/icons/twitter.svg';
 import { ReactComponent as Email } from '../images/icons/envelope.svg';
 
-const Icon = styled.div`
-  color: ${colors.bg};
-  :hover {
-    color: ${colors.accent};
-  }
-  padding: 9px 0;
-`;
+// const Icon = styled.div`
+//   color: ${colors.bg};
+//   :hover {
+//     color: ${colors.accent};
+//   }
+//   padding: 9px 0;
+// `;
 
 const FormattedIcon = ({ name }) => {
   switch (name) {
     case 'Github':
       return (
-        <Icon>
+        <div>
           <GitHub />
-        </Icon>
+        </div>
       );
     case 'Linkedin':
       return (
-        <Icon>
+        <div>
           <LinkedIn />
-        </Icon>
+        </div>
       );
     case 'Email':
       return (
-        <Icon>
+        <div>
           <Email />
-        </Icon>
+        </div>
       );
     case 'Twitter':
       return (
-        <Icon>
+        <div>
           <Twitter />
-        </Icon>
+        </div>
       );
     default:
       return (
-        <Icon>
+        <div>
           <GitHub />
-        </Icon>
+        </div>
       );
   }
 };

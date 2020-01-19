@@ -6,10 +6,12 @@ import './about-me.styles.scss';
 const AboutMe = () => {
   return (
     <div className='about-container'>
-      <a name='about' href='#about' style={{ opacity: 0 }}>
-        .
-      </a>
-      <h3>About Me</h3>
+      <h3>
+        About Me{' '}
+        <a name='about' href='#about' style={{ opacity: 0 }}>
+          .
+        </a>
+      </h3>
       <div className='flex-container'>
         <div className='about-content-container'>
           <p>
@@ -38,7 +40,7 @@ const AboutMe = () => {
           </p>
         </div>
         <div className='pic-container'>
-          <img src={mug} />
+          <img src={mug} alt='the face of Baz' />
         </div>
       </div>
     </div>

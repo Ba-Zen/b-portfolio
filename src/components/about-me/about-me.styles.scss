@@ -16,6 +16,9 @@ $mons: 'Montserrat', sans-serif;
   margin-top: 40rem;
   position: relative;
   background-color: $bg;
+  @media screen and (max-width: 1024px) {
+    margin-bottom: 28rem;
+  }
   @media screen and (max-width: 375px) {
     margin-left: 0;
     padding: 5rem;

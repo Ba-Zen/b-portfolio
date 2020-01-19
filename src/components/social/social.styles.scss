@@ -1,0 +1,45 @@
+$main: rgb(21, 27, 71);
+$teal: rgb(100, 255, 218);
+$lightBlue: rgb(230, 241, 255);
+$gray: rgb(136, 146, 176);
+$fifth: rgb(23, 42, 69);
+$navy: rgb(10, 25, 47);
+$bg: #d1e8e2;
+$darkBg: #bed1cc;
+$nav: #14a76c;
+$accent: #e43d40;
+
+$rale: 'Raleway', sans-serif;
+$mons: 'Montserrat', sans-serif;
+
+.social-container {
+  margin-bottom: -10rem;
+  ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &:after {
+      content: '';
+      display: block;
+      width: 1.5px;
+      height: 120px;
+      margin: 0 auto;
+      background-color: $bg;
+    }
+  }
+  span {
+    margin: 1.5rem 0;
+    :hover {
+      color: $accent;
+    }
+  }
+  a {
+    &:focus {
+      transform: translateY(-3px);
+    }
+    svg {
+      width: 40px;
+      color: $bg;
+    }
+  }
+}
