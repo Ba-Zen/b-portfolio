@@ -1,11 +1,12 @@
 import React from 'react';
 import Menu from './components/menu/menu.component';
-import './App.css';
+import Landing from './components/landing/landing.component';
 
 function App() {
   return (
     <div className='App'>
       <Menu />
+      <Landing />
     </div>
   );
 }

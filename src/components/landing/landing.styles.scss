@@ -1,0 +1,66 @@
+$main: rgb(21, 27, 71);
+$teal: rgb(100, 255, 218);
+$lightBlue: rgb(230, 241, 255);
+$gray: rgb(136, 146, 176);
+$fifth: rgb(23, 42, 69);
+$navy: rgb(10, 25, 47);
+$bg: #d1e8e2;
+$darkBg: #bed1cc;
+$nav: #14a76c;
+$accent: #e43d40;
+
+$rale: 'Raleway', sans-serif;
+$mons: 'Montserrat', sans-serif;
+
+.landing-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-left: 22rem;
+  background-color: $bg;
+  margin-top: 10rem;
+  @media screen and (max-width: 375px) {
+    margin-left: 0;
+    padding: 5rem;
+  }
+
+  h4 {
+    color: $navy;
+    font-size: 1.8rem;
+    font-family: $rale;
+  }
+  h1 {
+    color: $accent;
+    font-size: 3.5rem;
+    margin-top: 2rem;
+    font-family: $rale;
+
+    @media screen and (max-width: 375px) {
+      font-size: 3rem;
+    }
+  }
+  h2 {
+    color: $navy;
+    font-size: 4rem;
+    font-weight: bold;
+    font-family: $mons;
+    margin-top: 2rem;
+
+    @media screen and (max-width: 375px) {
+      font-size: 4rem;
+    }
+  }
+  p {
+    color: $navy;
+    font-size: 1.6rem;
+    font-family: $rale;
+    width: 800px;
+    margin-top: 2rem;
+
+    @media screen and (max-width: 375px) {
+      font-size: 2rem;
+      width: 300px;
+    }
+  }
+}
